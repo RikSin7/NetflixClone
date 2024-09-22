@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 function App() {
@@ -97,13 +98,13 @@ function App() {
             <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center md:justify-start mb-6 mt-4">
               Enjoy on your TV
             </h1>
-            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-start">
+            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-center">
               Watch on smart TVs, PlayStation, Xbox, Chromecast,
-              <br className="hidden md:block lg:block sm:block" />
+              <br className="block md:block lg:block sm:block" />
               Apple TV, Blu-ray players and more.
             </p>
           </div>
-          <div className="tv-container relative items-center bg-black md:h-full h-[60vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px] xs:w-[80vw]">
+          <div className="tv-container relative items-center bg-black md:h-full h-[40vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px] xs:w-[80vw]">
             <img src="/image/tv.png" alt="TV" className="w-full absolute" />
             <div className="video-inside">
               <video autoPlay loop muted className="w-full h-full object-cover">
@@ -114,36 +115,38 @@ function App() {
         </div>
       </section>
       <section className="w-full bg-black text-white  flex flex-col border-b-[8px] border-[#232323] py-8 md:py-16 lg:py-16">
-        <div className="second min-h-[60vh] flex  justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
+        <div className="second min-h-[60vh] flex justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
           <div className="mob-container relative items-center bg-black md:h-full h-[50vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
-            <img
-              src="/image/mobile-0819.jpg"
-              alt="mobile"
-              className="w-full object-cover"
-            />
-            <div className="border-2 border-gray-500 h-16 md:h-28 lg:h-28 sm:h-28 md:w-[340px] lg:w-[340px] sm:w-[340px]md:ml-[130px] lg:ml-[130px] rounded-xl md:mt-[280px] absolute bg-black flex ml-[60px] w-[260px] bottom-12 gap-3 md:gap-2 lg:gap-2 sm:gap-2">
+            <div className="flex relative justify-center w-full">
               <img
-                className="h-full object-cover md:p-3 lg:p-3 sm:p-3 p-2"
-                src="/image/strangerthingsimg.png"
-                alt="strangerthings"
+                src="/image/mobile-0819.jpg"
+                alt="mobile"
+                className="w-full object-cover"
               ></img>
-              <h1 className="flex justify-center flex-col md:font-bold lg:font-bold sm:font-bold font-semibold">
-                Stranger Things
-                <span className="text-blue-500 font-normal md:text-base lg:text-base sm:text-base text-xs -mt-1">
-                  Downloading...
-                </span>
-              </h1>
+              <div className="border-2 border-gray-500 h-[64px] md:h-[112px] lg:h-28 sm:h-24 md:w-[340px] lg:w-[340px] sm:w-[340px]  rounded-xl md:mt-[20px] absolute bg-black flex w-[260px] bottom-[48px] gap-3 md:gap-2 lg:gap-3 sm:gap-2">
+                <img
+                  className="h-full object-cover md:p-3 lg:p-3 sm:p-3 p-2"
+                  src="/image/strangerthingsimg.png"
+                  alt="strangerthings"
+                ></img>
+                <h1 className="flex justify-center flex-col md:font-bold lg:font-bold sm:font-bold font-semibold">
+                  Stranger Things
+                  <span className="text-blue-500 font-normal md:text-base lg:text-base sm:text-base text-xs -mt-1">
+                    Downloading...
+                  </span>
+                </h1>
+              </div>
             </div>
           </div>
           <div className="text flex flex-col">
-            <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center text-center md:justify-end mb-6 mt-4 md:text-start lg:text-start sm:text-start">
+            <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center text-center md:justify-end mb-6 mt-4 md:text-start lg:text-start sm:text-center ">
               Download your shows to
-              <br className="hidden md:block lg:block sm:block"></br>
+              <br className=" md:block lg:block sm:block block"></br>
               watch offline
             </h1>
-            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-start pl-8 px-4 md:px-0">
+            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-center pl-8 px-4 md:px-0">
               Save your favourites easily and always have something
-              <br className="hidden md:block lg:block sm:block" />
+              <br className="block md:block lg:block sm:block" />
               to watch.
             </p>
           </div>
@@ -158,7 +161,7 @@ function App() {
             </h1>
             <p className="md:text-2xl text-[1.15rem] font-normal px-4">
               Stream unlimited movies and TV shows on your
-              <br className="hidden md:block lg:block sm:block" />
+              <br className="block md:block lg:block sm:block" />
               phone, tablet, laptop, and TV.
             </p>
           </div>
@@ -188,10 +191,10 @@ function App() {
             />
           </div>
           <div className="text flex flex-col">
-            <h1 className="md:text-5xl lg:5xl text-[2em] font-bold md:font-extrabold lg:font-extrabold flex justify-center text-center md:justify-end mb-6 mt-4 md:text-start lg:text-start sm:text-start">
+            <h1 className="md:text-5xl lg:5xl text-[2em] font-bold md:font-extrabold lg:font-extrabold flex justify-center text-center md:justify-end mb-6 mt-4 md:text-start lg:text-start sm:text-center">
               Create profiles for kids
             </h1>
-            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-start pl-8 px-4 md:px-0">
+            <p className="md:text-2xl flex justify-center w-96 md:w-full lg:w-full text-[1.15rem] font-normal text-center md:text-start lg:text-start sm:text-center pl-8 px-4 md:px-0">
               Send children on adventures with their favourite
               <br className="hidden md:block lg:block sm:block" />
               characters in a space made just for them—free with

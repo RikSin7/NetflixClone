@@ -11,7 +11,7 @@ export default {
       screens: {
         xs: { max: '377px' },
         xsplus: { min: '377px' },
-        mob: { max: '450px' }
+        mob: { max: '450px' },
       }
       // fontFamily: {
       //   netflix: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
