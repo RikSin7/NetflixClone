@@ -92,7 +92,7 @@ function App() {
         </main>
       </div>
       <section className="w-full bg-black text-white md:py-16 lg:py-16 flex flex-col border-y-8 border-[#232323] py-8">
-        <div className="first min-h-[50vh] flex flex-col justify-center md:flex-row lg:flex-row items-center">
+        <div className="first min-h-[50vh] flex flex-col justify-center md:flex-row lg:flex-row items-center gap-9">
           <div className="text flex flex-col ml-4">
             <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center md:justify-start mb-6 mt-4">
               Enjoy on your TV
