@@ -54,12 +54,12 @@ function App() {
             </div>
           </nav>
         </div>
-        <main className="flex flex-col items-center justify-center  lg:pt-[200px] sm:pt-[150px] pt-20 relative  lg:pb-[200px] sm:pb-12">
+        <main className="flex flex-col items-center justify-center  lg:pt-[280px] sm:pt-[150px] pt-20 relative  lg:pb-[200px] sm:pb-12 ">
           <div className="main text-white flex flex-col items-center sm:w-[80vw] lg:w-[80vw] w-[100vw]">
             <h1 className="px-12 py-4 text-[2em] font-[800] text-center xs:p-8 md:text-5xl md:font-extrabold">
               Unlimited movies, TV shows and more
             </h1>
-            <h3 className="px-12 md:py-0 text-[1.2em] xs:px-8 md:text-[1.5rem] text-center sm:text-[1.5em]">
+            <h3 className="px-12 md:py-0 text-[1.2em] xs:px-8 md:text-[1.5rem] text-center sm:text-[1.5em] lg:text-3xl">
               Watch anywhere. Cancel anytime.
             </h3>
             <h4 className="px-14 md:px-12 md:py-3 mt-6 md:mt-4 text-[1.2rem] sm:text-[1.5rem] text-center">
@@ -103,7 +103,7 @@ function App() {
               Apple TV, Blu-ray players and more.
             </p>
           </div>
-          <div className="tv-container relative items-center bg-black md:h-full h-[40vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px] xs:w-[80vw]">
+          <div className="tv-container relative items-center bg-black  flex flex-row md:w-[600px] lg:w-[600px] w-[380px] xs:w-[80vw]">
             <img src="/image/tv.png" alt="TV" className="w-full absolute" />
             <div className="video-inside">
               <video autoPlay loop muted className="w-full h-full object-cover">
@@ -115,7 +115,7 @@ function App() {
       </section>
       <section className="w-full bg-black text-white  flex flex-col border-b-[8px] border-[#232323] py-8 md:py-16 lg:py-16">
         <div className="second min-h-[50vh] flex justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
-          <div className="mob-container relative items-center bg-black md:h-full h-[50vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
+          <div className="mob-container relative items-center bg-black  flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
             <div className="flex relative justify-center w-full">
               <img
                 src="/image/mobile-0819.jpg"
@@ -182,7 +182,7 @@ function App() {
 
       <section className="w-full bg-black text-white  flex flex-col border-b-[8px] border-[#232323] py-8 md:py-16 lg:py-16">
         <div className="fourth min-h-[50vh] flex  justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
-          <div className="mob-container relative items-center bg-black md:h-full h-[50vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
+          <div className="mob-container relative items-center bg-black flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
             <img
               src="/image/children.png"
               alt="mobile"
@@ -204,7 +204,7 @@ function App() {
         </div>
       </section>
 
-      <section className="xs:ml-12 border-b-[8px] border-[#232323] min-h-screen bg-black pt-12">
+      <section className="xs:ml-12 border-b-[8px] border-[#232323] min-h-[60vh] bg-black pt-12">
         <div className="container text-white mx-auto">
           <h1 className="md:text-4xl text-3xl lg:text-5xl md:font-extrabold font-bold text-white mb-4 flex justify-center text-center">
             Frequently Asked Questions
