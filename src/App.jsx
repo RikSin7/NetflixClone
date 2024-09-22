@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 function App() {
@@ -8,26 +7,26 @@ function App() {
   };
   return (
     <div className="min-h-screen w-full overflow-y-auto relative bg-black bg-[netflix-bg]">
-      <div className="bg bg-netflix-bg bg-cover bg-center xs:max-h-[80vh] md:max-h-[94vh] relative">
+      <div className="bg bg-netflix-bg bg-cover bg-center xs:min-h-[80vh] lg:max-h-[100vh] relative sm:min-h-[55vh]">
         <div className="absolute inset-0 bg-edge-dark-gradient"></div>
         <div className="flex flex-wrap relative">
           <nav className="w-full h-24 absolute flex justify-between items-center flex-wrap">
             <div className="logo flex items-center">
               <img
-                className="w-24 ml-6 md:w-40 md:ml-[10vw]"
+                className="w-24 xs:w-[80px] ml-6 md:w-40 md:ml-[10vw] xss:absolute xss:top-1"
                 src="/svg/netflix-logo.svg"
                 alt="netflix-logo"
               />
             </div>
-            <div className="navcontainer flex justify-end gap-4 absolute right-5 md:mr-[8vw] flex-wrap xs:mt-20">
+            <div className="navcontainer flex justify-end gap-4 absolute right-5 md:mr-[8vw] flex-wrap">
               <div className="language relative flex items-center h-auto">
                 <img
                   src="/svg/language.svg"
-                  className="w-4 h-4 absolute left-2 pointer-events-none text-white"
+                  className="w-4 h-4 absolute left-2 outline-none text-white xs:w-3 xs:h-3"
                   alt="langIcon"
                 ></img>
                 <select
-                  className="md:px-10 px-7 py-1 bg-transparent rounded-md border border-slate-600 text-white appearance-none relative z-10 font-semibold"
+                  className="md:px-10 px-7 py-1 bg-transparent rounded-md border border-slate-600 text-white appearance-none relative z-10 font-semibold sm:w-[140px] w-4"
                   name="language"
                   id="language"
                 >
@@ -55,15 +54,15 @@ function App() {
             </div>
           </nav>
         </div>
-        <main className="flex flex-col items-center justify-center  lg:pt-[280px] pt-20 relative xs:mt-4 lg:pb-[200px]">
-          <div className="main text-white flex flex-col items-center">
-            <h1 className="px-12 py-4 text-3xl font-bold text-center xs:p-8 md:text-5xl md:font-extrabold">
+        <main className="flex flex-col items-center justify-center  lg:pt-[200px] sm:pt-[150px] pt-20 relative  lg:pb-[200px] sm:pb-12">
+          <div className="main text-white flex flex-col items-center sm:w-[80vw] lg:w-[80vw] w-[100vw]">
+            <h1 className="px-12 py-4 text-[2em] font-[800] text-center xs:p-8 md:text-5xl md:font-extrabold">
               Unlimited movies, TV shows and more
             </h1>
-            <h3 className="px-12 md:py-0 text-[1.2rem] xs:px-8 md:text-[1.5rem] text-center">
+            <h3 className="px-12 md:py-0 text-[1.2em] xs:px-8 md:text-[1.5rem] text-center sm:text-[1.5em]">
               Watch anywhere. Cancel anytime.
             </h3>
-            <h4 className="px-14 md:px-12 md:py-3 mt-6 md:mt-4 text-[1.2rem] md:text-[1.3rem] text-center">
+            <h4 className="px-14 md:px-12 md:py-3 mt-6 md:mt-4 text-[1.2rem] sm:text-[1.5rem] text-center">
               Ready to watch? Enter your email to create or restart your
               membership.
             </h4>
@@ -93,7 +92,7 @@ function App() {
         </main>
       </div>
       <section className="w-full bg-black text-white md:py-16 lg:py-16 flex flex-col border-y-8 border-[#232323] py-8">
-        <div className="first min-h-[60vh] flex flex-col justify-center md:flex-row lg:flex-row items-center">
+        <div className="first min-h-[50vh] flex flex-col justify-center md:flex-row lg:flex-row items-center">
           <div className="text flex flex-col ml-4">
             <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center md:justify-start mb-6 mt-4">
               Enjoy on your TV
@@ -115,7 +114,7 @@ function App() {
         </div>
       </section>
       <section className="w-full bg-black text-white  flex flex-col border-b-[8px] border-[#232323] py-8 md:py-16 lg:py-16">
-        <div className="second min-h-[60vh] flex justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
+        <div className="second min-h-[50vh] flex justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
           <div className="mob-container relative items-center bg-black md:h-full h-[50vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
             <div className="flex relative justify-center w-full">
               <img
@@ -154,7 +153,7 @@ function App() {
       </section>
 
       <section className="w-full bg-black text-white flex flex-col border-b-[8px] border-[#232323] md:py-16 lg:py-16 py-8">
-        <div className="third md:min-h-[60vh] flex flex-col md:flex-row lg:flex-row items-center justify-center gap-8">
+        <div className="third md:min-h-[50vh] flex flex-col md:flex-row lg:flex-row items-center justify-center gap-8">
           <div className="text flex flex-col text-center md:text-start">
             <h1 className="md:text-5xl lg:text-5xl text-3xl font-bold md:font-extrabold lg:font-extrabold mb-6 mt-4 px-4">
               Watch everywhere
@@ -182,7 +181,7 @@ function App() {
       </section>
 
       <section className="w-full bg-black text-white  flex flex-col border-b-[8px] border-[#232323] py-8 md:py-16 lg:py-16">
-        <div className="fourth min-h-[60vh] flex  justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
+        <div className="fourth min-h-[50vh] flex  justify-center md:flex-row lg:flex-row items-center flex-col-reverse">
           <div className="mob-container relative items-center bg-black md:h-full h-[50vh] flex flex-row md:w-[600px] lg:w-[600px] w-[380px]">
             <img
               src="/image/children.png"
