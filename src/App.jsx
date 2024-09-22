@@ -7,7 +7,7 @@ function App() {
   };
   return (
     <div className="min-h-screen w-full overflow-y-auto relative bg-black bg-[netflix-bg]">
-      <div className="bg bg-netflix-bg bg-cover bg-center xs:h-[100vh] md:min-h-[94vh] relative">
+      <div className="bg bg-netflix-bg bg-cover bg-center xs:max-h-[80vh] md:max-h-[94vh] relative">
         <div className="absolute inset-0 bg-edge-dark-gradient"></div>
         <div className="flex flex-wrap relative">
           <nav className="w-full h-24 absolute flex justify-between items-center flex-wrap">
@@ -54,7 +54,7 @@ function App() {
             </div>
           </nav>
         </div>
-        <main className="flex flex-col items-center justify-center min-h-[500px] md:pt-64 pt-20 relative ">
+        <main className="flex flex-col items-center justify-center  lg:pt-[280px] pt-20 relative xs:mt-4 lg:pb-[200px]">
           <div className="main text-white flex flex-col items-center">
             <h1 className="px-12 py-4 text-3xl font-bold text-center xs:p-8 md:text-5xl md:font-extrabold">
               Unlimited movies, TV shows and more
@@ -66,7 +66,7 @@ function App() {
               Ready to watch? Enter your email to create or restart your
               membership.
             </h4>
-            <div className="inputArea flex flex-wrap md:gap-2 gap-5 justify-center w-full md:mt-2 mt-4">
+            <div className="inputArea flex flex-wrap md:gap-2 gap-5 justify-center w-full md:mt-2 mt-4 xs:mb-8 mb-8">
               <label for="email"></label>
               <input
                 className="py-3 px-4 md:p-4 bg-black bg-opacity-40 border border-gray-500 rounded-md flex text-left xs:w-[70vw] w-[80vw] md:w-96 text-white placeholder-gray-300 justify-between"
@@ -75,7 +75,7 @@ function App() {
                 id="email"
               />
               <button
-                className="bg-red-600 md:p-3 py-2 border border-red-600 rounded-md flex w-40 md:w-52 font-semibold flex-row-reverse justify-center gap-2 md:gap-4 text-xl md:text-2xl items-center px-2"
+                className="bg-red-600 md:p-3 py-2 border border-red-600 rounded-md flex font-semibold flex-row-reverse justify-center gap-2 md:gap-4 text-xl md:text-2xl items-center px-2"
                 type="submit"
               >
                 <span>
@@ -93,7 +93,7 @@ function App() {
       </div>
       <section className="w-full bg-black text-white md:py-16 lg:py-16 flex flex-col border-y-8 border-[#232323] py-8">
         <div className="first min-h-[60vh] flex flex-col justify-center md:flex-row lg:flex-row items-center">
-          <div className="text flex flex-col">
+          <div className="text flex flex-col ml-4">
             <h1 className="md:text-5xl lg:5xl text-3xl font-bold md:font-extrabold lg:font-extrabold flex justify-center md:justify-start mb-6 mt-4">
               Enjoy on your TV
             </h1>
